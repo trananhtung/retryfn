@@ -3,10 +3,10 @@
 > Retry async functions with **exponential backoff, jitter, `AbortSignal`, per-attempt timeouts**, and **`Retry-After` awareness**. **Zero dependencies**.
 
 [![CI](https://github.com/trananhtung/retryfn/actions/workflows/ci.yml/badge.svg)](https://github.com/trananhtung/retryfn/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/retryfn.svg)](https://www.npmjs.com/package/retryfn)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/retryfn)](https://bundlephobia.com/package/retryfn)
-[![types](https://img.shields.io/npm/types/retryfn.svg)](https://www.npmjs.com/package/retryfn)
-[![license](https://img.shields.io/npm/l/retryfn.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/@billdaddy/retryfn.svg)](https://www.npmjs.com/package/@billdaddy/retryfn)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@billdaddy/retryfn)](https://bundlephobia.com/package/@billdaddy/retryfn)
+[![types](https://img.shields.io/npm/types/@billdaddy/retryfn.svg)](https://www.npmjs.com/package/@billdaddy/retryfn)
+[![license](https://img.shields.io/npm/l/@billdaddy/retryfn.svg)](./LICENSE)
 
 Transient failures are a fact of life: a dropped connection, a `429 Too Many
 Requests` from an LLM API, a service that's briefly `503`. `retryfn` retries the
@@ -15,7 +15,7 @@ operation the right way — exponential backoff with jitter so you don't stamped
 `AbortSignal` and per-attempt timeout support.
 
 ```ts
-import { retry } from "retryfn";
+import { retry } from "@billdaddy/retryfn";
 
 const data = await retry(
   async ({ signal }) => {
@@ -47,8 +47,8 @@ not a guessed backoff.
 ## Install
 
 ```bash
-npm install retryfn
-# or: pnpm add retryfn  /  yarn add retryfn  /  bun add retryfn
+npm install @billdaddy/retryfn
+# or: pnpm add @billdaddy/retryfn  /  yarn add @billdaddy/retryfn  /  bun add @billdaddy/retryfn
 ```
 
 ## API
