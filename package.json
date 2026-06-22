@@ -1,6 +1,6 @@
 {
   "name": "@billdaddy/retryfn",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Retry async functions with exponential backoff, jitter, AbortSignal, per-attempt timeouts, and Retry-After awareness. Zero dependencies.",
   "keywords": [
     "retry",
